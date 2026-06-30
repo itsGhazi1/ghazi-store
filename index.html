@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ghazy — premium anime clothing, streetwear and classic fashion, designed in Egypt.">
+  <meta name="theme-color" content="#0D0D0D">
+  <title>GHAZY — Premium Streetwear & Anime Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2.6">
+</head>
+<body data-theme="dark">
+  <div class="announcement" data-i18n="announcement">🚚 Free Shipping On Orders Above 1000 EGP</div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Main navigation">
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <a class="logo" href="#home" aria-label="Ghazy home">GHAZY<span>.</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#shop" data-i18n="navShop">Shop</a>
+        <a href="#categories" data-i18n="navCategories">Categories</a>
+        <a href="#collections" data-i18n="navCollections">Collections</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="text-btn" id="languageToggle" aria-label="Change language">ع</button>
+        <button class="icon-btn" id="themeToggle" aria-label="Change theme"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36A7 7 0 0 1 13.36 3.1C12.92 3.04 12.46 3 12 3Z"/></svg></button>
+        <button class="icon-btn" id="wishlistOpen" aria-label="Wishlist"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg><span class="count" id="wishlistCount">0</span></button>
+        <button class="icon-btn" id="cartOpen" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M6 7h12l1 14H5L6 7Zm3 0V5a3 3 0 0 1 6 0v2"/></svg><span class="count" id="cartCount">0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">NEW SEASON · 2026</p>
+        <h1 data-i18n="heroTitle">Wear Your<br>Own Story.</h1>
+        <p data-i18n="heroSubtitle">Anime energy. Street attitude. Timeless essentials.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#shop" data-i18n="shopNow">Shop now</a>
+          <a class="btn btn-ghost" href="#collections" data-i18n="exploreCollections">Explore collections</a>
+        </div>
+      </div>
+      <a href="#featured" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><span>01</span><p data-i18n="trustQuality">Premium quality</p></div>
+        <div><span>02</span><p data-i18n="trustDelivery">Fast delivery</p></div>
+        <div><span>03</span><p data-i18n="trustExchange">Easy exchange</p></div>
+        <div><span>04</span><p data-i18n="trustSecure">Secure checkout</p></div>
+      </div>
+    </section>
+
+    <section class="section container" id="featured">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow" data-i18n="selectedForYou">SELECTED FOR YOU</p><h2 data-i18n="featuredTitle">Featured pieces</h2></div>
+        <a href="#shop" class="arrow-link" data-i18n="viewAll">View all <span>↗</span></a>
+      </div>
+      <div class="product-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="category-editorial" id="categories">
+      <div class="category-card category-large" data-category="Anime"><div class="category-copy"><span>01</span><h3 data-i18n="catAnime">Anime</h3><button data-i18n="discover">Discover</button></div></div>
+      <div class="category-card category-street" data-category="Streetwear"><div class="category-copy"><span>02</span><h3 data-i18n="catStreetwear">Streetwear</h3><button data-i18n="discover">Discover</button></div></div>
+      <div class="category-card category-classic" data-category="Regular"><div class="category-copy"><span>03</span><h3 data-i18n="catRegular">Regular Fit</h3><button data-i18n="discover">Discover</button></div></div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow" data-i18n="communityFavorites">COMMUNITY FAVORITES</p><h2 data-i18n="bestSellers">Best sellers</h2></div>
+      </div>
+      <div class="product-row" id="bestSellerGrid"></div>
+    </section>
+
+    <section class="collection-story custom-shirt-section" id="collections">
+      <div class="custom-shirt-copy reveal">
+        <p class="eyebrow" data-i18n="customOverline">CUSTOM MADE</p>
+        <h2 data-i18n="customTitle">CREATE<br>YOUR SHIRT</h2>
+        <p data-i18n="customText">Send us your character, quote, logo, or idea. We will turn it into a premium tee made for you.</p>
+        <div class="custom-choice">
+          <span data-i18n="customGenderLabel">Who is it for?</span>
+          <div class="custom-choice-options" id="customGenderOptions">
+            <label><input type="radio" name="customGender" value="Men" checked><span data-i18n="customMen">Men</span></label>
+            <label><input type="radio" name="customGender" value="Women"><span data-i18n="customWomen">Women</span></label>
+          </div>
+        </div>
+        <div class="custom-size-guides">
+          <span data-i18n="customSizeGuideLabel">Size guides</span>
+          <div>
+            <button type="button" data-custom-size-guide="Oversized" data-i18n="customOversizedGuide">Oversized</button>
+            <button type="button" data-custom-size-guide="Regular" data-i18n="customRegularGuide">Regular</button>
+            <button type="button" data-custom-size-guide="LongSleeve" data-i18n="customLongSleeveGuide">Long sleeve</button>
+          </div>
+        </div>
+        <a class="btn btn-dark" id="customShirtWhatsapp" target="_blank" rel="noopener" data-i18n="customStart">Design your shirt</a>
+        <small data-i18n="customWhatsappNote">We will continue the details with you on WhatsApp.</small>
+      </div>
+      <div class="custom-shirt-gallery" aria-label="Create your shirt examples">
+        <img class="custom-main" src="image/create-shirt-men-oversized.jpg" alt="Create your shirt oversized example">
+        <img src="image/create-shirt-women-long-sleeve.jpg" alt="Create your shirt women's long sleeve example">
+        <img src="image/create-shirt-men-long-sleeve.jpg" alt="Create your shirt men's long sleeve example">
+      </div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="container">
+        <div class="section-heading shop-heading reveal">
+          <div><p class="eyebrow" data-i18n="fullCatalog">THE FULL EDIT</p><h2 data-i18n="shopTitle">Shop all</h2></div>
+          <button class="filter-mobile-btn" id="filterOpen" data-i18n="filters">Filters</button>
+        </div>
+        <div class="shop-toolbar">
+          <label class="search-box"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="searchInput" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Search pieces"></label>
+          <p id="productCount">0 products</p>
+          <label class="sort-wrap"><span data-i18n="sortBy">Sort by</span><select id="sortSelect"><option value="featured" data-i18n="sortFeatured">Featured</option><option value="newest" data-i18n="sortNewest">Newest</option><option value="low" data-i18n="sortLow">Price: Low to High</option><option value="high" data-i18n="sortHigh">Price: High to Low</option></select></label>
+        </div>
+        <div class="shop-layout">
+          <aside class="filters" id="filtersPanel">
+            <div class="filter-header"><strong data-i18n="filters">Filters</strong><button id="filterClose">×</button></div>
+            <div class="filter-group"><button class="filter-title"><span data-i18n="category">Category</span><span>−</span></button><div class="filter-options" id="categoryFilters"></div></div>
+            <div class="filter-group"><button class="filter-title"><span data-i18n="collection">Collection</span><span>−</span></button><div class="filter-options" id="collectionFilters"></div></div>
+            <div class="filter-group"><button class="filter-title"><span data-i18n="gender">Gender</span><span>−</span></button><div class="filter-options" id="genderFilters"></div></div>
+            <div class="filter-group"><button class="filter-title"><span data-i18n="size">Size</span><span>−</span></button><div class="size-filters" id="sizeFilters"></div></div>
+            <div class="filter-group"><button class="filter-title"><span data-i18n="price">Price</span><span>−</span></button><div class="price-filter"><input type="range" id="priceRange" min="0" max="2000" step="50" value="2000"><div><span>0 EGP</span><span id="priceValue">2,000 EGP</span></div></div></div>
+            <button class="btn btn-dark apply-filter" id="applyFilters" data-i18n="showResults">Show results</button>
+            <button class="clear-filters" id="clearFilters" data-i18n="clearFilters">Clear all filters</button>
+          </aside>
+          <div class="product-grid shop-grid" id="shopGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-arrivals section container">
+      <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="justDropped">JUST DROPPED</p><h2 data-i18n="newArrivals">New arrivals</h2></div></div>
+      <div class="product-row" id="newArrivalsGrid"></div>
+    </section>
+
+    <section class="promo-banner">
+      <div class="promo-inner reveal"><p data-i18n="promoOverline">YOUR FIRST GHAZY PIECE</p><h2 data-i18n="promoTitle">10% OFF YOUR<br>FIRST ORDER</h2><p data-i18n="promoCode">Use code <strong>ghazi10</strong> at checkout</p><a href="#shop" class="btn btn-light" data-i18n="shopNow">Shop now</a></div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner reveal">
+        <div><p class="eyebrow" data-i18n="stayInLoop">STAY IN THE LOOP</p><h2 data-i18n="newsletterTitle">Get the drop first.</h2><p data-i18n="newsletterText">New releases, private offers and stories from the Ghazy world.</p></div>
+        <form id="newsletterForm"><input type="email" required data-i18n-placeholder="emailPlaceholder" placeholder="Your email address"><button aria-label="Subscribe">→</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="logo" href="#home">GHAZY<span>.</span></a><p data-i18n="footerTagline">Designed for those who refuse to blend in.</p><div class="socials"><a href="#">Instagram</a><a href="#">TikTok</a><a href="https://wa.me/201066397197">WhatsApp</a></div></div>
+      <div><h4 data-i18n="shopFooter">Shop</h4><a href="#shop" data-i18n="newArrivals">New arrivals</a><a href="#featured" data-i18n="bestSellers">Best sellers</a><a href="#categories" data-i18n="categories">Categories</a><a href="#collections" data-i18n="collections">Collections</a></div>
+      <div><h4 data-i18n="help">Help</h4><a href="#" data-i18n="shipping">Shipping & delivery</a><a href="#" data-i18n="returns">Returns & exchange</a><a href="#" data-i18n="sizeGuide">Size guide</a><a href="mailto:hello@ghazy.store" data-i18n="contactUs">Contact us</a></div>
+      <div><h4 data-i18n="contactUs">Contact us</h4><p>hello@ghazy.store</p><p class="contact-phone" dir="ltr"><bdi>+20 106 639 7197</bdi></p><p data-i18n="location">New Damietta, Egypt</p></div>
+    </div>
+    <div class="container footer-bottom"><p>© 2026 Ghazy. <span data-i18n="rights">All rights reserved.</span></p><div><a href="#" data-i18n="privacy">Privacy</a><a href="#" data-i18n="terms">Terms</a></div></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="side-drawer cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow" data-i18n="yourSelection">YOUR SELECTION</p><h2><span data-i18n="cart">Cart</span> <small id="cartDrawerCount">(0)</small></h2></div><button class="close-btn" data-close-drawer>×</button></div>
+    <div class="shipping-progress"><p id="shippingMessage"></p><div><span id="shippingProgressBar"></span></div></div>
+    <div class="drawer-items" id="cartItems"></div>
+    <div class="drawer-summary">
+      <div class="discount-entry"><input id="discountInput" type="text" data-i18n-placeholder="discountCode" placeholder="Discount code"><button id="applyDiscount" data-i18n="apply">Apply</button></div>
+      <p class="discount-feedback" id="discountFeedback"></p>
+      <div class="summary-line"><span data-i18n="subtotal">Subtotal</span><strong id="cartSubtotal">0 EGP</strong></div>
+      <div class="summary-line"><span data-i18n="shipping">Shipping</span><strong id="cartShipping">0 EGP</strong></div>
+      <div class="summary-line discount-line"><span data-i18n="discount">Discount</span><strong id="cartDiscount">− 0 EGP</strong></div>
+      <div class="summary-line total"><span data-i18n="total">Total</span><strong id="cartTotal">0 EGP</strong></div>
+      <button class="btn btn-dark btn-block" id="checkoutOpen" data-i18n="checkout">Secure checkout</button>
+      <button class="continue-shopping" data-close-drawer data-i18n="continueShopping">Continue shopping</button>
+    </div>
+  </aside>
+
+  <aside class="side-drawer wishlist-drawer" id="wishlistDrawer" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow" data-i18n="savedPieces">SAVED PIECES</p><h2 data-i18n="wishlist">Wishlist</h2></div><button class="close-btn" data-close-drawer>×</button></div>
+    <div class="drawer-items" id="wishlistItems"></div>
+  </aside>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="product-modal-card"><button class="close-btn modal-close" data-close-modal>×</button><div id="productModalContent"></div></div>
+  </div>
+
+  <div class="image-viewer" id="imageViewer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image zoom viewer">
+    <div class="image-viewer-backdrop" data-close-image-viewer></div>
+    <div class="image-viewer-toolbar">
+      <button id="viewerZoomOut" aria-label="Zoom out">−</button>
+      <span id="viewerZoomLevel">100%</span>
+      <button id="viewerZoomIn" aria-label="Zoom in">+</button>
+      <button id="viewerReset" aria-label="Reset zoom">↺</button>
+      <button id="viewerClose" aria-label="Close image">×</button>
+    </div>
+    <div class="image-viewer-stage" id="imageViewerStage">
+      <img id="imageViewerImage" alt="">
+    </div>
+    <p class="image-viewer-hint" data-i18n="zoomHint">Scroll to zoom · Drag to move · Double-click to zoom</p>
+  </div>
+
+  <div class="modal checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-checkout></div>
+    <div class="checkout-card">
+      <button class="close-btn modal-close" data-close-checkout>×</button>
+      <div class="checkout-title"><p class="eyebrow">GHAZY · SECURE CHECKOUT</p><h2 data-i18n="completeOrder">Complete your order</h2></div>
+      <div class="checkout-layout">
+        <form id="checkoutForm" novalidate>
+          <h3 data-i18n="contactDetails">Contact details</h3>
+          <div class="form-grid"><label class="full"><span data-i18n="fullName">Full name</span><input name="fullName" required autocomplete="name"></label><label><span data-i18n="phone">Phone number</span><input name="phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" dir="ltr"></label><label><span data-i18n="whatsapp">WhatsApp number</span><input name="whatsapp" type="tel" required inputmode="tel" autocomplete="tel" dir="ltr"></label><label class="full"><span data-i18n="email">Email</span><input name="email" type="email" autocomplete="email"></label></div>
+          <h3 data-i18n="deliveryAddress">Delivery address</h3>
+          <div class="form-grid"><label><span data-i18n="governorate">Governorate</span><select name="governorate" required><option value="">—</option><option>Cairo</option><option>Giza</option><option>Alexandria</option><option>Qalyubia</option><option>Sharqia</option><option>Dakahlia</option><option>Damietta</option><option>Gharbia</option><option>Monufia</option><option>Beheira</option><option>Other</option></select></label><label><span data-i18n="city">City</span><input name="city" required></label><label class="full"><span data-i18n="address">Full address</span><input name="address" required autocomplete="street-address"></label><label class="full"><span data-i18n="notes">Notes (optional)</span><textarea name="notes" rows="3"></textarea></label></div>
+          <h3 data-i18n="paymentMethod">Payment method</h3>
+          <div class="payment-options" id="paymentOptions">
+            <label><input type="radio" name="payment" value="Cash On Delivery" checked><span><strong data-i18n="cod">Cash on delivery</strong><small data-i18n="payAtDoor">Pay when your order arrives</small></span></label>
+            <label><input type="radio" name="payment" value="Vodafone Cash"><span><strong>Vodafone Cash</strong><small>01066397197</small></span></label>
+            <label><input type="radio" name="payment" value="InstaPay"><span><strong>InstaPay</strong><small>ghazy@instapay</small></span></label>
+            <label><input type="radio" name="payment" value="Bank Transfer"><span><strong data-i18n="bankTransfer">Bank transfer</strong><small data-i18n="detailsAfter">Details after order</small></span></label>
+          </div>
+          <div class="transaction-fields" id="transactionFields"><label><span data-i18n="transactionRef">Transaction reference number</span><input name="transactionReference"></label><p data-i18n="paymentNote">Please complete the transfer and enter the transaction reference.</p></div>
+          <p class="form-error" id="checkoutError"></p>
+          <button class="btn btn-dark btn-block confirm-btn" type="submit"><span data-i18n="confirmOrder">Confirm order</span><span class="button-loader"></span></button>
+        </form>
+        <aside class="checkout-summary"><h3 data-i18n="orderSummary">Order summary</h3><div id="checkoutItems"></div><div class="checkout-totals" id="checkoutTotals"></div></aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal success-modal" id="successModal" aria-hidden="true">
+    <div class="modal-backdrop"></div><div class="success-card"><div class="success-mark">✓</div><p class="eyebrow">ORDER CONFIRMED</p><h2 data-i18n="thankYou">Thank you.</h2><p data-i18n="orderReceived">Your order has been received and is now being prepared.</p><strong id="successOrderNumber"></strong><a class="btn whatsapp-btn" id="whatsappButton" target="_blank" rel="noopener" data-i18n="confirmWhatsapp">Confirm on WhatsApp</a><button class="continue-shopping" id="successClose" data-i18n="continueShopping">Continue shopping</button></div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<script src="script.js?v=6.3"></script>
+</body>
+</html>
