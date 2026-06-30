@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+    <rect width="900" height="1200" fill="#121b18"/>
+    <circle cx="180" cy="210" r="280" fill="#91aa9c" opacity=".12"/>
+    <path d="M-100 820 L1000 660" stroke="#91aa9c" stroke-width="2" opacity=".45"/>
+    <path d="M-100 870 L1000 710" stroke="#91aa9c" stroke-width="1" opacity=".2"/>
+    <text x="70" y="105" fill="#91aa9c" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="12">GHAZY</text>
+    <text x="70" y="1010" fill="#F2F2F2" font-family="Arial,sans-serif" font-size="43" font-weight="700">Signature Pleated Trousers</text>
+    <text x="70" y="1060" fill="#91aa9c" font-family="Arial,sans-serif" font-size="18" letter-spacing="5">DETAIL VIEW · SAMPLE</text>
+    <text x="70" y="1130" fill="#777" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">PLACEHOLDER PRODUCT IMAGE</text>
+  </svg>
